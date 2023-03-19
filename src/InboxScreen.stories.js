@@ -24,7 +24,7 @@ Default.parameters = {
   },
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/hoYgD8YUzvigjwDhWveBbf/TestStorybook?node-id=4-17&t=gjkACJvUMEfNYpAR-0",
+    url: "https://www.figma.com/file/hoYgD8YUzvigjwDhWveBbf/TestStorybook?node-id=4-26&t=nBnsgiWYSUNwwE7P-0",
   },
 };
 
