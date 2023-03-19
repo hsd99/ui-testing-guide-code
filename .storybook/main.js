@@ -10,7 +10,11 @@ module.exports = {
     "@storybook/addon-essentials",
     "@storybook/preset-create-react-app",
     "storybook-addon-designs",
+    "@storybook/addon-interactions",
   ],
+  features: {
+    interactionsDebugger: true, // 👈 Enable playback controls
+  },
   core: {
     builder: {
       name: "webpack5",
