@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Flex, Text } from '@chakra-ui/react';
+import React from "react";
+import PropTypes from "prop-types";
+import { Flex } from "@chakra-ui/react";
 
 export const EmptyState = ({ Icon, title, subtitle, ...props }) => (
   <Flex
@@ -9,17 +9,7 @@ export const EmptyState = ({ Icon, title, subtitle, ...props }) => (
     alignItems="center"
     justifyContent="center"
     {...props}
-  >
-    <Text py={1}>
-      <Icon color="brand.300" fontSize="5xl" />
-    </Text>
-    <Text color="gray.600" fontWeight="extrabold" fontSize="md" lineHeight={6}>
-      {title}
-    </Text>
-    <Text color="gray.600" fontSize="sm" lineHeight={5}>
-      {subtitle}
-    </Text>
-  </Flex>
+  ></Flex>
 );
 
 EmptyState.propTypes = {

@@ -1,11 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { VStack, Skeleton, Flex, Spacer } from "@chakra-ui/react";
-import { CheckIcon, StarIcon } from "@chakra-ui/icons";
+import { VStack, Flex } from "@chakra-ui/react";
 import { Task } from "./Task";
-import { EmptyState } from "./EmptyState";
-
-const LoadingTask = () => <Flex></Flex>;
 
 export function TaskList({
   loading,

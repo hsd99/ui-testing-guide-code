@@ -1,14 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import {
-  Checkbox,
-  Flex,
-  IconButton,
-  Input,
-  Box,
-  VisuallyHidden,
-} from "@chakra-ui/react";
-import { BellIcon } from "@chakra-ui/icons";
+import { Flex } from "@chakra-ui/react";
 
 export const Task = ({
   task: { id, title, state },
@@ -16,12 +8,7 @@ export const Task = ({
   onTogglePinTask,
   onEditTitle,
   ...props
-}) => (
-  <Flex   
-    {...props}
-  >
-  </Flex>
-);
+}) => <Flex {...props}></Flex>;
 
 Task.propTypes = {
   task: PropTypes.shape({

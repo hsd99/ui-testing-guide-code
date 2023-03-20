@@ -1,9 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Box, Heading } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import { Icon } from "@chakra-ui/react";
-import { TaskList } from "./components/TaskList";
-import { EmptyState } from "./components/EmptyState";
 import { useTasks } from "./useTasks";
 
 const FrownIcon = (props) => (
@@ -24,18 +22,6 @@ const FrownIcon = (props) => (
 
 export const InboxScreen = ({ error }) => {
   const [tasks, dispatch] = useTasks();
-
-  const archiveTask = (archive, id) => {
-    dispatch({ type: archive ? "ARCHIVE_TASK" : "INBOX_TASK", id });
-  };
-
-  const togglePinTask = (state, id) => {
-    dispatch({ type: state === "TASK_PINNED" ? "INBOX_TASK" : "PIN_TASK", id });
-  };
-
-  const editTitle = (title, id) => {
-    dispatch({ type: "EDIT_TITLE", id, title });
-  };
 
   return <Box p={4} bg="brand.300"></Box>;
 };
